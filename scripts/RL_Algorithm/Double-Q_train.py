@@ -106,18 +106,7 @@ def main(env_cfg: ManagerBasedRLEnvCfg | DirectRLEnvCfg | DirectMARLEnvCfg, agen
     # ==================================================================== #
     # ========================= Can be modified ========================== #
 
-    # #hyperparameters
-    # num_of_action = 11
-    # action_range = [-16.0, 16.0]  # [min, max]
-    # discretize_state_weight = [5, 11, 3, 3]  # [pose_cart:int, pose_pole:int, vel_cart:int, vel_pole:int]
-    # learning_rate = 0.3
-    # n_episodes = 10_000
-    # start_epsilon = 1.0
-    # epsilon_decay = 0.997  # reduce the exploration over time
-    # final_epsilon = 0.01
-    # discount = 0.5
-
-    # hyperparameters
+    # hyperparameters Experiment 1
     num_of_action = 11
     action_range = [-20, 20]  # [min, max]
     discretize_state_weight = [5, 5, 5, 5]  # [pose_cart:int, pose_pole:int, vel_cart:int, vel_pole:int]

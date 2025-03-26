@@ -86,7 +86,7 @@ def main(env_cfg: ManagerBasedRLEnvCfg | DirectRLEnvCfg | DirectMARLEnvCfg, agen
     # ==================================================================== #
     # ========================= Can be modified ========================== #
 
-    # hyperparameters
+    # hyperparameters Experiment 1
     num_of_action = 11
     action_range = [-20, 20]  # [min, max]
     discretize_state_weight = [5, 5, 5, 5]  # [pose_cart:int, pose_pole:int, vel_cart:int, vel_pole:int]
