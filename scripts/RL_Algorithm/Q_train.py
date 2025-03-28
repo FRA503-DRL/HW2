@@ -117,6 +117,28 @@ def main(env_cfg: ManagerBasedRLEnvCfg | DirectRLEnvCfg | DirectMARLEnvCfg, agen
     final_epsilon = 0.01
     discount = 0.5
 
+    # # hyperparameters Experiment 2
+    # num_of_action = 11
+    # action_range = [-20, 20]  # [min, max]
+    # discretize_state_weight = [5, 5, 5, 5]  # [pose_cart:int, pose_pole:int, vel_cart:int, vel_pole:int]
+    # learning_rate = 0.01
+    # n_episodes = 20_000
+    # start_epsilon = 1.0
+    # epsilon_decay = 0.9998  # reduce the exploration over time
+    # final_epsilon = 0.01
+    # discount = 0.95
+
+    # # hyperparameters Experiment 3
+    # num_of_action = 19
+    # action_range = [-20, 20]  # [min, max]
+    # discretize_state_weight = [10, 10, 10, 10]  # [pose_cart:int, pose_pole:int, vel_cart:int, vel_pole:int]
+    # learning_rate = 0.1
+    # n_episodes = 20_000
+    # start_epsilon = 1.0
+    # epsilon_decay = 0.9995  # reduce the exploration over time
+    # final_epsilon = 0.01
+    # discount = 0.5
+
     agent = Q_Learning(
         num_of_action=num_of_action,
         action_range=action_range,

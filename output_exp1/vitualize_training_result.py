@@ -2,10 +2,19 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 files = {
-    "Q-Learning": "Q_training_results.csv",
-    "SARSA": "SARSA_training_results.csv",
-    "Double Q-Learning": "Double_Q_training_results.csv",
-    "Monte Carlo": "MC_training_results.csv"
+    # EXP1
+    "Q-Learning": "Q_test_results.csv",
+    "SARSA": "SARSA_test_results.csv",
+    "Double Q-Learningt": "Double_Q_test_results.csv",
+    "Monte Carlo": "MC_test_results.csv",
+
+    # EXP2
+    "Q-Learning_EXP2": "/Users/buzz/Documents/GitHub/HW2/output_exp2/Q_test_results.csv",
+
+    # EXP3
+    "Q-Learning_EXP3_9900": "/Users/buzz/Documents/GitHub/HW2/output_exp3/Q_test_results_9900.csv",
+    "Q-Learning_EXP3_19900": "/Users/buzz/Documents/GitHub/HW2/output_exp3/Q_test_results_19900.csv"
+
 }
 
 dfs = {name: pd.read_csv(path) for name, path in files.items()}
